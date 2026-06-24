@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Saya</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Tombol */
+        .btn {
+            display: inline-block;
+            background: #1a73e8;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #1557b0;
+        }
+
+        /* Iframe */
+        .iframe-wrapper {
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            iframe {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📊 Begood.bdg Dashboard</h1>
+        <p>Klik tombol di bawah untuk membuka dashboard, atau lihat langsung di bawah ini.</p>
+
+        <!-- Tombol untuk membuka di tab baru -->
+        <a href="https://script.google.com/macros/s/AKfycbyXhrPtic5yMGKKePW-14ccJwEqBTIWFjEwLzztlS3aycCKRwZKnZ9Z01TMnYvhqb5L/exec"
+           target="_blank"
+           class="btn">
+            🚀 Buka Dashboard
+        </a>
+
+        <!-- Tampilkan langsung di halaman (iframe) -->
+        <div class="iframe-wrapper">
+            <iframe src="https://script.google.com/macros/s/AKfycbyXhrPtic5yMGKKePW-14ccJwEqBTIWFjEwLzztlS3aycCKRwZKnZ9Z01TMnYvhqb5L/exec"
+                    title="Begood Dashboard">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
